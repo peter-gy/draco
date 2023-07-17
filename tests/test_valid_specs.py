@@ -1,5 +1,5 @@
-from draco.helper import is_valid
-from draco.js import vl2asp
+from draco1.helper import is_valid
+from draco1.js import vl2asp
 
 data_schema = [
     'fieldtype("n1",string).',

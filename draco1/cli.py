@@ -8,9 +8,9 @@ import os
 import sys
 from enum import Enum
 
-from draco import __version__
-from draco.js import cql2asp, vl2asp
-from draco.run import run
+from draco1 import __version__
+from draco1.js import cql2asp, vl2asp
+from draco1.run import run
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

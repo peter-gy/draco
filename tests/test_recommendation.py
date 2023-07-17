@@ -1,8 +1,8 @@
 import unittest
 
-from draco.helper import data_to_asp
-from draco.js import cql2asp, vl2asp
-from draco.run import run
+from draco1.helper import data_to_asp
+from draco1.js import cql2asp, vl2asp
+from draco1.run import run
 
 
 def get_rec(data_schema, spec, relax_hard=False):

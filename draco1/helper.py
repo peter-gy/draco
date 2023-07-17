@@ -3,8 +3,8 @@ from typing import List
 
 import pandas as pd
 
-from draco.js import data2schema, schema2asp
-from draco.run import run_clingo
+from draco1.js import data2schema, schema2asp
+from draco1.run import run_clingo
 
 
 def is_valid(draco_query: List[str], debug=False) -> bool:

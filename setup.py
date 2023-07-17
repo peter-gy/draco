@@ -6,7 +6,7 @@ from subprocess import call
 from time import time
 from typing import List
 
-from draco import __version__
+from draco1 import __version__
 from setuptools import Command, setup
 
 this_dir = abspath(dirname(__file__))
@@ -69,7 +69,7 @@ class RunTests(Command):
 
 
 setup(
-    name="draco",
+    name="draco1",
     version=__version__,
     description="Visualization recommendation using constraints",
     long_description=long_description,
@@ -77,15 +77,15 @@ setup(
     author_email="domoritz@cs.washington.edu, clwang@cs.washington.edu",
     license="BSD-3",
     url="https://github.com/uwdata/draco",
-    packages=["draco"],
-    entry_points={"console_scripts": ["draco=draco.cli:main"]},
+    packages=["draco1"],
+    entry_points={"console_scripts": ["draco1=draco1.cli:main"]},
     install_requires=["clyngor"],
     include_package_data=True,
     extras_require={
         "test": ["coverage", "pytest", "pytest-cov", "black", "ansunit", "mypy"]
     },
     package_data={
-        "draco": [
+        "draco1": [
             "../asp/*.lp",
             "../js/bin/*",
             "../js/build/draco.js*",

@@ -1,6 +1,6 @@
 import pytest
 
-from draco.cli import create_parser
+from draco1.cli import create_parser
 
 
 class TestCli:

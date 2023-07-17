@@ -13,7 +13,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import clyngor
 from clyngor.answers import Answers
 
-from draco.js import asp2vl
+from draco1.js import asp2vl
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

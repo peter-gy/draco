@@ -3,9 +3,9 @@ import os
 
 from jsonschema import validate
 
-from draco.run import run
-from draco.helper import read_data_to_asp
-from draco.js import cql2asp
+from draco1.run import run
+from draco1.helper import read_data_to_asp
+from draco1.js import cql2asp
 
 EXAMPLES_DIR = os.path.join("examples")
 
