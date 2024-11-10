@@ -1,8 +1,6 @@
 import json
 from typing import List
 
-import pandas as pd
-
 from draco1.js import data2schema, schema2asp
 from draco1.run import run_clingo
 
@@ -41,6 +39,8 @@ def read_data_to_asp(file: str) -> List[str]:
     Returns:
        the asp definition.
     """
+    import pandas as pd
+    
     if file.endswith(".json"):
         with open(file) as f:
             data = json.load(f)

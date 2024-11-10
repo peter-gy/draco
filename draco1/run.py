@@ -8,10 +8,10 @@ import os
 import subprocess
 import tempfile
 from collections import defaultdict
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional, Tuple, TYPE_CHECKING
 
-import clyngor
-from clyngor.answers import Answers
+if TYPE_CHECKING:
+    from clyngor.answers import Answers
 
 from draco1.js import asp2vl
 
@@ -40,7 +40,7 @@ class Result:
     cost: Optional[int]
     violations: Dict[str, int]
 
-    def __init__(self, answers: Answers, cost: Optional[int] = None) -> None:
+    def __init__(self, answers: 'Answers', cost: Optional[int] = None) -> None:
         violations: Dict[str, int] = defaultdict(int)
         props: List[str] = []
 
@@ -128,6 +128,7 @@ def run(
     clear_cache=False,
 ) -> Optional[Result]:
     """Run clingo to compute a completion of a partial spec or violations."""
+    import clyngor
 
     # Clear file cache. useful during development in notebooks.
     if clear_cache and file_cache:

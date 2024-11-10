@@ -2,7 +2,7 @@ import json
 import logging
 import os
 import subprocess
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
